@@ -52,41 +52,42 @@
   ],
   "external": [
     {
-      "url": "https://status.lvcha.de/",
+      "label": "入口 A",
+      "kind": "公开",
       "code": "200",
       "expected": "200",
-      "ok": true,
-      "status": "code=200 final=https://status.lvcha.de/status/public verify=0 time=0.016714s"
+      "ok": true
     },
     {
-      "url": "https://panel.lvcha.de/",
+      "label": "入口 B",
+      "kind": "公开",
       "code": "200",
       "expected": "200",
-      "ok": true,
-      "status": "code=200 final=https://panel.lvcha.de/ZXXfj1HpNsplhe0LSW/ verify=0 time=0.782006s"
+      "ok": true
     },
     {
-      "url": "https://up.lvcha.de/",
+      "label": "入口 C",
+      "kind": "公开",
       "code": "200",
       "expected": "200",
-      "ok": true,
-      "status": "code=200 final=https://up.lvcha.de/ verify=0 time=0.044196s"
+      "ok": true
     },
     {
-      "url": "https://de1.lvcha.de/",
+      "label": "入口 D",
+      "kind": "受保护",
       "code": "401",
       "expected": "401",
-      "ok": true,
-      "status": "code=401 final=https://de1.lvcha.de/yibgEvJmA0xIljzdr0/ verify=0 time=0.016697s"
+      "ok": true
     },
     {
-      "url": "https://tg.lvcha.de/",
+      "label": "入口 E",
+      "kind": "受保护",
       "code": "401",
       "expected": "401",
-      "ok": true,
-      "status": "code=401 final=https://tg.lvcha.de/ verify=0 time=0.042984s"
+      "ok": true
     }
   ],
+  "external_alerts": [],
   "backup": {
     "status": "ok",
     "summary": "正常；最近运行：2026-07-04T07:13:15Z；日志：hermes-backup-2026-07-04-071315.log；备份仓库 HEAD：9266d51",
