@@ -9,74 +9,74 @@
 <body>
   <div class='wrapper'>
     <header class='topbar'>
-      <div class='brand'>
-        <div class='brand-mark'>OPS</div>
-        <div class='brand-copy'>
-          <h1><a href='index.html'>运维日志</a></h1>
-          <p>lvcha.de 基础设施历史日报</p>
-        </div>
+      <div class='topbar-copy'>
+        <div class='kicker'>Public ops archive</div>
+        <a class='brand' href='index.html'>
+          <div class='brand-mark'>OPS</div>
+          <div class='brand-text'>
+            <strong>运维日志</strong>
+            <span>lvcha.de 基础设施历史日报</span>
+          </div>
+        </a>
       </div>
-      <div class='topbar-meta'>公开版历史页<br><span class='muted'>浅色监控视图</span></div>
+      <div class='topbar-meta'><div class='pill'>公开版历史页</div><div class='pill'>Apple-ish B 方向</div></div>
     </header>
     
-    <section class='panel hero'>
-      <div class='hero-top'>
+    <section class='hero'>
+      <div class='hero-grid'>
         <div>
-          <h2>按天回看运维状态</h2>
-          <p>这个站点记录每天的基础设施概览、外部入口检查和备份结果，适合快速翻历史，不用再翻聊天记录。</p>
+          <h1 class='display'>用更轻的方式看运维状态。</h1>
+          <p class='display-sub'>保留一眼能读懂的概览，把“今天最重要的那一件事”放到前面，其余信息退到后面。</p>
+        </div>
+        <div class='focus-card'>
+          <div class='tiny-label'>今天状态</div>
+          <div class='big-status'>需关注</div>
+          <div class='tiny-label' style='margin-top:8px'>生成于 2026-07-04T20:10:26.332068+08:00</div>
+        </div>
+      </div>
+      <div class='stats'>
+        <div class='stat'><div class='label'>归档天数</div><div class='value'>1</div></div>
+        <div class='stat'><div class='label'>异常天数</div><div class='value'>1</div></div>
+        <div class='stat'><div class='label'>入口通过</div><div class='value'>5/5</div></div>
+        <div class='stat'><div class='label'>最近主机数</div><div class='value'>3</div></div>
+      </div>
+    </section>
+
+    <section class='panel'>
+      <div class='panel-top'>
+        <div>
+          <h2 class='panel-title'>最近一次日报</h2>
+          <div class='panel-note'>更像信息展板：主信息块突出，细节变少，适合每天只扫一眼。</div>
         </div>
         <span class="badge warn">需关注</span>
       </div>
-      <div class='grid stats'>
-        <div class='stat-card'><div class='label'>已归档天数</div><div class='metric'>1</div></div>
-        <div class='stat-card'><div class='label'>出现异常的天数</div><div class='metric'>1</div></div>
-        <div class='stat-card'><div class='label'>备份异常天数</div><div class='metric'>0</div></div>
-        <div class='stat-card'><div class='label'>最近一次主机数</div><div class='metric'>3</div></div>
-      </div>
-    </section>
 
-    <section class='grid two-col'>
-      <section class='panel section'>
-        <div class='section-head'>
-          <h2>最近一次日报</h2>
-          <span class='table-subtle'>优先看这里</span>
+      <div class='latest-grid'>
+        <div class='feature'>
+          <div class='feature-date'>2026-07-04</div>
+          <div class='summary-row'><div class='key'>异常</div><div>netcup1o[low_memory,watchdog_timeout]</div></div>
+          <div class='summary-row'><div class='key'>关注</div><div>netcup1o</div></div>
+          <div class='summary-row'><div class='key'>备份</div><div>正常；最近运行：2026-07-04T07:13:15Z；日志：hermes-backup-2026-07-04-071315.log；备份仓库 HEAD：9266d51</div></div>
         </div>
-        
-        <div class='latest-card'>
-          <div class='latest-top'>
-            <a href='daily/2026-07-04.html'>2026-07-04</a>
-            <span class="badge warn">需关注</span>
-          </div>
-          <p class='section-intro'>生成时间：2026-07-04T20:10:26.332068+08:00</p>
-          <dl class='kv'>
-            <dt>异常项</dt><dd>netcup1o[low_memory,watchdog_timeout]</dd>
-            <dt>备份</dt><dd>正常；最近运行：2026-07-04T07:13:15Z；日志：hermes-backup-2026-07-04-071315.log；备份仓库 HEAD：9266d51</dd>
-            <dt>范围</dt><dd>公开版：保留每日状态、外部入口和备份摘要，不展示敏感排障细节。</dd>
-          </dl>
-        </div>
-        
-      </section>
-      <aside class='panel section side-note'>
-        <div class='section-head'>
-          <h2>主机摘要</h2>
-          <span class='table-subtle'>按当天数据</span>
-        </div>
-        <div class='host-list'><article class='host-row'><div><h3>netcup1o</h3><p>960MB total, 898MB used, 61MB available / ext4 29G used 14G free 52%</p></div><div><span class="badge warn">需关注</span></div><div><strong>可用内存偏低；journald 出现 watchdog timeout</strong><p>关键状态：正常 · 健康：正常</p></div></article><article class='host-row'><div><h3>netcup-recorder</h3><p>7940MB total, 3602MB used, 4337MB available / ext4 503G used 132G free 28%</p></div><div><span class="badge ok">正常</span></div><div><strong>Hermes 落后 1 commit（未自动更新）</strong><p>关键状态：正常 · 健康：正常</p></div></article><article class='host-row'><div><h3>sanjose</h3><p>967MB total, 429MB used, 537MB available / ext4 24G used 3.8G free 16%</p></div><div><span class="badge ok">正常</span></div><div><strong>无</strong><p>关键状态：正常 · 健康：正常</p></div></article></div>
-      </aside>
-    </section>
 
-    <section class='panel section'>
-      <div class='section-head'>
-        <h2>历史日报</h2>
-        <span class='table-subtle'>点击日期进入详情</span>
+        <div class='aside-card'>
+          <strong>为什么这版会更顺眼</strong>
+          <p>它不把所有信息都做成一堆卡片，而是优先放大当前最重要的块，减少“后台模板感”。</p>
+          <div class='table-note' style='margin-top:14px'>公开版：保留每日状态、外部入口和备份摘要，不展示敏感排障细节。</div>
+        </div>
       </div>
-      <div class='table-wrap'>
-        <table>
-          <thead>
-            <tr><th>日期</th><th>状态</th><th>关注主机</th><th>异常数</th><th>备份</th></tr>
-          </thead>
-          <tbody><tr><td><a href='daily/2026-07-04.html'>2026-07-04</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr></tbody>
-        </table>
+
+      <div class='hosts'><article class='host-card'><div class='host-top'><h3>netcup1o</h3><span class="badge warn">需关注</span></div><p class='host-meta'>960MB total, 898MB used, 61MB available / ext4 29G used 14G free 52%</p><p class='host-note'>可用内存偏低；journald 出现 watchdog timeout</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div></div></article><article class='host-card'><div class='host-top'><h3>netcup-recorder</h3><span class="badge ok">正常</span></div><p class='host-meta'>7940MB total, 3602MB used, 4337MB available / ext4 503G used 132G free 28%</p><p class='host-note'>Hermes 落后 1 commit（未自动更新）</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div></div></article><article class='host-card'><div class='host-top'><h3>sanjose</h3><span class="badge ok">正常</span></div><p class='host-meta'>967MB total, 429MB used, 537MB available / ext4 24G used 3.8G free 16%</p><p class='host-note'>无</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div></div></article></div>
+
+      <div class='table-shell'>
+        <div class='table-wrap'>
+          <table>
+            <thead>
+              <tr><th>日期</th><th>状态</th><th>关注主机</th><th>异常数</th><th>备份</th></tr>
+            </thead>
+            <tbody><tr><td><a href='daily/2026-07-04.html'>2026-07-04</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
