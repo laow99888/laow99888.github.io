@@ -1,7 +1,7 @@
 {
   "date_local": "2026-07-04",
-  "generated_at": "2026-07-04T12:08:04.346758+00:00",
-  "generated_at_local": "2026-07-04T20:08:04.346758+08:00",
+  "generated_at": "2026-07-04T12:09:04.415773+00:00",
+  "generated_at_local": "2026-07-04T20:09:04.415773+08:00",
   "overall_status": "warn",
   "anomalies": [
     "netcup1o[low_memory,watchdog_timeout]"
@@ -20,21 +20,21 @@
       "notes": "可用内存偏低；journald 出现 watchdog timeout",
       "key_state": "正常",
       "health": "正常",
-      "resource": "960MB total, 881MB used, 78MB available / ext4 29G used 14G free 52%",
+      "resource": "960MB total, 879MB used, 80MB available / ext4 29G used 14G free 52%",
       "kernel": "6.1.0-49-amd64",
-      "uptime": "up 1 day, 15 hours, 29 minutes",
+      "uptime": "up 1 day, 15 hours, 30 minutes",
       "short_error": "Jul 04 12:46:21 1o systemd[1]: systemd-journald.service: Watchdog timeout (limit 3min)!"
     },
     {
       "name": "netcup-recorder",
       "status": "ok",
       "alerts": [],
-      "notes": "Hermes 落后 25 commit（未自动更新）",
+      "notes": "Hermes 落后 1 commit（未自动更新）",
       "key_state": "正常",
       "health": "正常",
-      "resource": "7940MB total, 3853MB used, 4087MB available / ext4 503G used 132G free 28%",
+      "resource": "7940MB total, 3639MB used, 4301MB available / ext4 503G used 132G free 28%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 1 day, 15 hours, 22 minutes",
+      "uptime": "up 1 day, 15 hours, 23 minutes",
       "short_error": "无"
     },
     {
@@ -44,9 +44,9 @@
       "notes": "无",
       "key_state": "正常",
       "health": "正常",
-      "resource": "967MB total, 433MB used, 533MB available / ext4 24G used 3.8G free 16%",
+      "resource": "967MB total, 429MB used, 537MB available / ext4 24G used 3.8G free 16%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 1 day, 15 hours, 32 minutes",
+      "uptime": "up 1 day, 15 hours, 33 minutes",
       "short_error": "无"
     }
   ],
@@ -56,35 +56,35 @@
       "code": "200",
       "expected": "200",
       "ok": true,
-      "status": "code=200 final=https://status.lvcha.de/status/public verify=0 time=0.021672s"
+      "status": "code=200 final=https://status.lvcha.de/status/public verify=0 time=0.028211s"
     },
     {
       "url": "https://panel.lvcha.de/",
       "code": "200",
       "expected": "200",
       "ok": true,
-      "status": "code=200 final=https://panel.lvcha.de/ZXXfj1HpNsplhe0LSW/ verify=0 time=0.816186s"
+      "status": "code=200 final=https://panel.lvcha.de/ZXXfj1HpNsplhe0LSW/ verify=0 time=0.792768s"
     },
     {
       "url": "https://up.lvcha.de/",
       "code": "200",
       "expected": "200",
       "ok": true,
-      "status": "code=200 final=https://up.lvcha.de/ verify=0 time=0.092374s"
+      "status": "code=200 final=https://up.lvcha.de/ verify=0 time=0.047474s"
     },
     {
       "url": "https://de1.lvcha.de/",
       "code": "401",
       "expected": "401",
       "ok": true,
-      "status": "code=401 final=https://de1.lvcha.de/yibgEvJmA0xIljzdr0/ verify=0 time=0.056107s"
+      "status": "code=401 final=https://de1.lvcha.de/yibgEvJmA0xIljzdr0/ verify=0 time=0.022686s"
     },
     {
       "url": "https://tg.lvcha.de/",
       "code": "401",
       "expected": "401",
       "ok": true,
-      "status": "code=401 final=https://tg.lvcha.de/ verify=0 time=0.067216s"
+      "status": "code=401 final=https://tg.lvcha.de/ verify=0 time=0.151005s"
     }
   ],
   "backup": {
