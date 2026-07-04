@@ -1,0 +1,12 @@
+[
+  {
+    "date_local": "2026-07-04",
+    "generated_at_local": "2026-07-04T15:17:18.549673+08:00",
+    "overall_status": "warn",
+    "anomaly_count": 1,
+    "flagged_hosts": [
+      "netcup1o"
+    ],
+    "backup_status": "ok"
+  }
+]

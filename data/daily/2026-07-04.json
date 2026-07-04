@@ -1,0 +1,101 @@
+{
+  "date_local": "2026-07-04",
+  "generated_at": "2026-07-04T07:17:18.549673+00:00",
+  "generated_at_local": "2026-07-04T15:17:18.549673+08:00",
+  "overall_status": "warn",
+  "anomalies": [
+    "netcup1o[low_memory,watchdog_timeout]"
+  ],
+  "flagged_hosts": [
+    "netcup1o"
+  ],
+  "hosts": [
+    {
+      "name": "netcup1o",
+      "status": "warn",
+      "alerts": [
+        "low_memory",
+        "watchdog_timeout"
+      ],
+      "notes": "可用内存偏低；journald 出现 watchdog timeout",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "960MB total, 800MB used, 159MB available / ext4 29G used 14G free 52%",
+      "kernel": "6.1.0-49-amd64",
+      "uptime": "up 1 day, 10 hours, 38 minutes",
+      "short_error": "Jul 04 12:46:21 1o systemd[1]: systemd-journald.service: Watchdog timeout (limit 3min)!"
+    },
+    {
+      "name": "netcup-recorder",
+      "status": "ok",
+      "alerts": [],
+      "notes": "Hermes 落后 1 commit（未自动更新）",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "7940MB total, 3517MB used, 4422MB available / ext4 503G used 133G free 28%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 1 day, 10 hours, 31 minutes",
+      "short_error": "无"
+    },
+    {
+      "name": "sanjose",
+      "status": "ok",
+      "alerts": [],
+      "notes": "无",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "967MB total, 434MB used, 533MB available / ext4 24G used 3.8G free 17%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 1 day, 10 hours, 41 minutes",
+      "short_error": "无"
+    }
+  ],
+  "external": [
+    {
+      "url": "https://status.lvcha.de/",
+      "code": "200",
+      "expected": "200",
+      "ok": true,
+      "status": "code=200 final=https://status.lvcha.de/status/public verify=0 time=0.016847s"
+    },
+    {
+      "url": "https://panel.lvcha.de/",
+      "code": "200",
+      "expected": "200",
+      "ok": true,
+      "status": "code=200 final=https://panel.lvcha.de/ZXXfj1HpNsplhe0LSW/ verify=0 time=0.811729s"
+    },
+    {
+      "url": "https://up.lvcha.de/",
+      "code": "200",
+      "expected": "200",
+      "ok": true,
+      "status": "code=200 final=https://up.lvcha.de/ verify=0 time=0.045400s"
+    },
+    {
+      "url": "https://de1.lvcha.de/",
+      "code": "401",
+      "expected": "401",
+      "ok": true,
+      "status": "code=401 final=https://de1.lvcha.de/yibgEvJmA0xIljzdr0/ verify=0 time=0.039433s"
+    },
+    {
+      "url": "https://tg.lvcha.de/",
+      "code": "401",
+      "expected": "401",
+      "ok": true,
+      "status": "code=401 final=https://tg.lvcha.de/ verify=0 time=0.042191s"
+    }
+  ],
+  "backup": {
+    "status": "ok",
+    "summary": "正常；最近运行：2026-07-04T07:13:15Z；日志：hermes-backup-2026-07-04-071315.log；备份仓库 HEAD：9266d51",
+    "alert": false
+  },
+  "summary": {
+    "host_count": 3,
+    "anomaly_count": 1,
+    "external_alert_count": 0,
+    "backup_alert": false
+  }
+}

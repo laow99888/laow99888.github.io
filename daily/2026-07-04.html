@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>2026-07-04 · 运维日志</title>
+  <link rel='stylesheet' href='assets/style.css'>
+</head>
+<body>
+  <div class='wrapper'>
+    
+    <div class='breadcrumb'><a href='../index.html'>← 返回首页</a></div>
+    <section class='hero'>
+      <h1>2026-07-04</h1>
+      <p>生成时间：2026-07-04T15:17:18.549673+08:00</p>
+    </section>
+
+    <section class='grid stats'>
+      <div class='card'><div class='metric'><span class="badge warn">需关注</span></div><div class='label'>整体状态</div></div>
+      <div class='card'><div class='metric'>1</div><div class='label'>异常项数量</div></div>
+      <div class='card'><div class='metric'>ok</div><div class='label'>备份状态</div></div>
+    </section>
+
+    <section class='card'>
+      <h2>异常项</h2>
+      <ul class='clean'><li>netcup1o[low_memory,watchdog_timeout]</li></ul>
+    </section>
+
+    <section class='card'>
+      <h2>主机状态</h2>
+      <div class='grid host-grid'><div class='host-card'><h3>netcup1o</h3><span class="badge warn">需关注</span><ul class='clean'><li>内核：<span class='code'>6.1.0-49-amd64</span></li><li>运行时长：up 1 day, 10 hours, 38 minutes</li><li>资源：960MB total, 800MB used, 159MB available / ext4 29G used 14G free 52%</li><li>关键状态：正常</li><li>健康检查：正常</li><li>备注：可用内存偏低；journald 出现 watchdog timeout</li><li>日志摘要：Jul 04 12:46:21 1o systemd[1]: systemd-journald.service: Watchdog timeout (limit 3min)!</li></ul></div><div class='host-card'><h3>netcup-recorder</h3><span class="badge ok">正常</span><ul class='clean'><li>内核：<span class='code'>6.12.94+deb13-amd64</span></li><li>运行时长：up 1 day, 10 hours, 31 minutes</li><li>资源：7940MB total, 3517MB used, 4422MB available / ext4 503G used 133G free 28%</li><li>关键状态：正常</li><li>健康检查：正常</li><li>备注：Hermes 落后 1 commit（未自动更新）</li><li>日志摘要：无</li></ul></div><div class='host-card'><h3>sanjose</h3><span class="badge ok">正常</span><ul class='clean'><li>内核：<span class='code'>6.12.94+deb13-amd64</span></li><li>运行时长：up 1 day, 10 hours, 41 minutes</li><li>资源：967MB total, 434MB used, 533MB available / ext4 24G used 3.8G free 17%</li><li>关键状态：正常</li><li>健康检查：正常</li><li>备注：无</li><li>日志摘要：无</li></ul></div></div>
+    </section>
+
+    <section class='card'>
+      <h2>备份</h2>
+      <p>正常；最近运行：2026-07-04T07:13:15Z；日志：hermes-backup-2026-07-04-071315.log；备份仓库 HEAD：9266d51</p>
+    </section>
+
+    <section class='card'>
+      <h2>外部入口</h2>
+      <div class='table-wrap'>
+        <table>
+          <thead><tr><th>URL</th><th>当前</th><th>期望</th><th>结果</th></tr></thead>
+          <tbody><tr><td>https://status.lvcha.de/</td><td>200</td><td>200</td><td>正常</td></tr><tr><td>https://panel.lvcha.de/</td><td>200</td><td>200</td><td>正常</td></tr><tr><td>https://up.lvcha.de/</td><td>200</td><td>200</td><td>正常</td></tr><tr><td>https://de1.lvcha.de/</td><td>401</td><td>401</td><td>正常</td></tr><tr><td>https://tg.lvcha.de/</td><td>401</td><td>401</td><td>正常</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+    
+  </div>
+</body>
+</html>
