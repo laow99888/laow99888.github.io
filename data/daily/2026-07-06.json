@@ -1,0 +1,101 @@
+{
+  "date_local": "2026-07-06",
+  "generated_at": "2026-07-06T00:01:49.147813+00:00",
+  "generated_at_local": "2026-07-06T08:01:49.147813+08:00",
+  "overall_status": "warn",
+  "anomalies": [
+    "netcup1o[low_memory]"
+  ],
+  "flagged_hosts": [
+    "netcup1o"
+  ],
+  "hosts": [
+    {
+      "name": "netcup1o",
+      "status": "warn",
+      "alerts": [
+        "low_memory"
+      ],
+      "notes": "可用内存偏低",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "960MB total, 846MB used, 114MB available / ext4 29G used 14G free 52%",
+      "kernel": "6.1.0-49-amd64",
+      "uptime": "up 3 days, 3 hours, 22 minutes",
+      "short_error": "Jul 05 10:47:06 1o sshd[165118]: error: send_error: write: Broken pipe / Jul 05 10:47:06 1o sshd[165124]: error: send_error: write: Broken pipe"
+    },
+    {
+      "name": "netcup-recorder",
+      "status": "ok",
+      "alerts": [],
+      "notes": "Hermes 落后 13193 commit（未自动更新）",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "7940MB total, 3566MB used, 4374MB available / ext4 503G used 142G free 30%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 3 days, 3 hours, 15 minutes",
+      "short_error": "无"
+    },
+    {
+      "name": "sanjose",
+      "status": "ok",
+      "alerts": [],
+      "notes": "无",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "967MB total, 443MB used, 524MB available / ext4 24G used 3.8G free 17%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 3 days, 3 hours, 25 minutes",
+      "short_error": "Jul 05 16:31:23 racknerd-bfa113c sshd-session[31960]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]"
+    }
+  ],
+  "external": [
+    {
+      "label": "入口 A",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 B",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 C",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 D",
+      "kind": "受保护",
+      "code": "401",
+      "expected": "401",
+      "ok": true
+    },
+    {
+      "label": "入口 E",
+      "kind": "受保护",
+      "code": "401",
+      "expected": "401",
+      "ok": true
+    }
+  ],
+  "external_alerts": [],
+  "backup": {
+    "status": "ok",
+    "summary": "正常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674",
+    "alert": false
+  },
+  "summary": {
+    "host_count": 3,
+    "anomaly_count": 1,
+    "external_alert_count": 0,
+    "backup_alert": false
+  }
+}
