@@ -1,7 +1,7 @@
 {
   "date_local": "2026-07-06",
-  "generated_at": "2026-07-06T00:01:49.147813+00:00",
-  "generated_at_local": "2026-07-06T08:01:49.147813+08:00",
+  "generated_at": "2026-07-06T00:02:29.072428+00:00",
+  "generated_at_local": "2026-07-06T08:02:29.072428+08:00",
   "overall_status": "warn",
   "anomalies": [
     "netcup1o[low_memory]"
@@ -19,21 +19,21 @@
       "notes": "可用内存偏低",
       "key_state": "正常",
       "health": "正常",
-      "resource": "960MB total, 846MB used, 114MB available / ext4 29G used 14G free 52%",
+      "resource": "960MB total, 859MB used, 100MB available / ext4 29G used 14G free 52%",
       "kernel": "6.1.0-49-amd64",
-      "uptime": "up 3 days, 3 hours, 22 minutes",
+      "uptime": "up 3 days, 3 hours, 23 minutes",
       "short_error": "Jul 05 10:47:06 1o sshd[165118]: error: send_error: write: Broken pipe / Jul 05 10:47:06 1o sshd[165124]: error: send_error: write: Broken pipe"
     },
     {
       "name": "netcup-recorder",
       "status": "ok",
       "alerts": [],
-      "notes": "Hermes 落后 13193 commit（未自动更新）",
+      "notes": "Hermes 落后 1 commit（未自动更新）",
       "key_state": "正常",
       "health": "正常",
-      "resource": "7940MB total, 3566MB used, 4374MB available / ext4 503G used 142G free 30%",
+      "resource": "7940MB total, 3613MB used, 4327MB available / ext4 503G used 142G free 30%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 3 days, 3 hours, 15 minutes",
+      "uptime": "up 3 days, 3 hours, 16 minutes",
       "short_error": "无"
     },
     {
@@ -43,9 +43,9 @@
       "notes": "无",
       "key_state": "正常",
       "health": "正常",
-      "resource": "967MB total, 443MB used, 524MB available / ext4 24G used 3.8G free 17%",
+      "resource": "967MB total, 444MB used, 523MB available / ext4 24G used 3.8G free 17%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 3 days, 3 hours, 25 minutes",
+      "uptime": "up 3 days, 3 hours, 26 minutes",
       "short_error": "Jul 05 16:31:23 racknerd-bfa113c sshd-session[31960]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]"
     }
   ],
