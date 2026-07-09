@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>2026-07-09 · 运维日志</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='../assets/style.css'>
+</head>
+<body>
+  <div class='wrapper'>
+    <header class='topbar'>
+      <div class='topbar-copy'>
+        <div class='kicker'>Public ops archive</div>
+        <a class='brand' href='../index.html'>
+          <div class='brand-mark'>OPS</div>
+          <div class='brand-text'>
+            <strong>运维日志</strong>
+            <span>lvcha.de 基础设施历史日报</span>
+          </div>
+        </a>
+      </div>
+      <div class='topbar-meta'><div class='pill'>日报详情</div><div class='pill'>2026-07-09</div></div>
+    </header>
+    
+    <div class='breadcrumb'><a href='../index.html'>← 返回首页</a></div>
+
+    <section class='day-hero'>
+      <div class='day-head'>
+        <div>
+          <h1 class='day-title'>2026-07-09</h1>
+          <div class='meta-line'>生成时间：2026-07-09T08:00:55.894567+08:00</div>
+        </div>
+        <span class="badge warn">需关注</span>
+      </div>
+
+      <div class='day-meta'>
+        <div class='stat'><div class='label'>异常项</div><div class='value'>3</div></div>
+        <div class='stat'><div class='label'>主机数</div><div class='value'>3</div></div>
+        <div class='stat'><div class='label'>入口通过</div><div class='value'>4/5</div></div>
+      </div>
+    </section>
+
+    <section class='panel'>
+      <div class='panel-top'>
+        <div>
+          <h2 class='panel-title'>当天摘要</h2>
+          <div class='panel-note'>详情页继续沿用首页的轻量信息板思路，把摘要、主机和入口结果分开看。</div>
+        </div>
+      </div>
+
+      <div class='day-summary-grid'>
+        <div class='feature'>
+          <div class='summary-row'><div class='key'>异常</div><div>netcup1o[low_memory]；external[入口 B（公开）]；backup[backup_stale]</div></div>
+          <div class='summary-row'><div class='key'>关注</div><div>netcup1o</div></div>
+          <div class='summary-row'><div class='key'>备份</div><div>异常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674；状态过旧</div></div>
+        </div>
+
+        <div class='aside-card'>
+          <strong>公开版说明</strong>
+          <p>公开版：保留每日状态、外部入口和备份摘要，不展示敏感排障细节。</p>
+          <div class='table-note' style='margin-top:14px'>原始排障日志、凭据和更细的内部诊断不会出现在这里。</div>
+        </div>
+      </div>
+
+      <div class='hosts'><article class='host-card'><div class='host-top'><h3>netcup1o</h3><span class="badge warn">需关注</span></div><p class='host-meta'>960MB total, 892MB used, 67MB available / ext4 29G used 16G free 58%</p><p class='host-note'>可用内存偏低</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div><div>运行时长：up 1 day, 5 hours, 28 minutes</div></div></article><article class='host-card'><div class='host-top'><h3>netcup-recorder</h3><span class="badge ok">正常</span></div><p class='host-meta'>7940MB total, 3374MB used, 4566MB available / ext4 503G used 145G free 30%</p><p class='host-note'>Hermes 落后 98 commit（未自动更新）</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div><div>运行时长：up 6 days, 3 hours, 15 minutes</div></div></article><article class='host-card'><div class='host-top'><h3>sanjose</h3><span class="badge ok">正常</span></div><p class='host-meta'>967MB total, 437MB used, 529MB available / ext4 24G used 3.8G free 17%</p><p class='host-note'>无</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div><div>运行时长：up 6 days, 3 hours, 24 minutes</div></div></article></div>
+
+      <div class='info-grid'>
+        <div class='info-block'>
+          <strong>异常重点</strong>
+          <p>netcup1o[low_memory]；external[入口 B（公开）]；backup[backup_stale]</p>
+        </div>
+        <div class='info-block'>
+          <strong>备份状态</strong>
+          <p>ok</p>
+        </div>
+        <div class='info-block'>
+          <strong>入口检查</strong>
+          <p>4/5 个入口符合预期返回码</p>
+        </div>
+      </div>
+    </section>
+
+    <section class='panel'>
+      <div class='panel-top'>
+        <div>
+          <h2 class='panel-title'>外部入口</h2>
+          <div class='panel-note'>面向外部的入口状态，公开页只保留入口代号与结果视图，不展示真实域名。</div>
+        </div>
+      </div>
+      <div class='table-shell'>
+        <div class='table-wrap'>
+          <table>
+            <thead><tr><th>入口代号</th><th>当前</th><th>期望</th><th>结果</th></tr></thead>
+            <tbody><tr><td>入口 A<div class='table-note'>公开</div></td><td>200</td><td>200</td><td>正常</td></tr><tr><td>入口 B<div class='table-note'>公开</div></td><td>404</td><td>200</td><td>异常</td></tr><tr><td>入口 C<div class='table-note'>公开</div></td><td>200</td><td>200</td><td>正常</td></tr><tr><td>入口 D<div class='table-note'>受保护</div></td><td>401</td><td>401</td><td>正常</td></tr><tr><td>入口 E<div class='table-note'>受保护</div></td><td>401</td><td>401</td><td>正常</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+</body>
+</html>
