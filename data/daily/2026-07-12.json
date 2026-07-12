@@ -1,7 +1,7 @@
 {
   "date_local": "2026-07-12",
-  "generated_at": "2026-07-12T00:00:38.527566+00:00",
-  "generated_at_local": "2026-07-12T08:00:38.527566+08:00",
+  "generated_at": "2026-07-12T00:01:14.440104+00:00",
+  "generated_at_local": "2026-07-12T08:01:14.440104+08:00",
   "overall_status": "warn",
   "anomalies": [
     "netcup1o[low_memory]",
@@ -21,21 +21,21 @@
       "notes": "可用内存偏低",
       "key_state": "正常",
       "health": "正常",
-      "resource": "960MB total, 867MB used, 93MB available / ext4 29G used 16G free 58%",
+      "resource": "960MB total, 864MB used, 96MB available / ext4 29G used 16G free 58%",
       "kernel": "6.1.0-49-amd64",
-      "uptime": "up 4 days, 5 hours, 28 minutes",
+      "uptime": "up 4 days, 5 hours, 29 minutes",
       "short_error": "无"
     },
     {
       "name": "netcup-recorder",
       "status": "ok",
       "alerts": [],
-      "notes": "Hermes 落后 65 commit（未自动更新）",
+      "notes": "Hermes 落后 1 commit（未自动更新）",
       "key_state": "正常",
       "health": "正常",
-      "resource": "7940MB total, 3716MB used, 4224MB available / ext4 503G used 144G free 30%",
+      "resource": "7940MB total, 3706MB used, 4234MB available / ext4 503G used 145G free 30%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 1 week, 2 days, 3 hours, 14 minutes",
+      "uptime": "up 1 week, 2 days, 3 hours, 15 minutes",
       "short_error": "无"
     },
     {
@@ -45,9 +45,9 @@
       "notes": "无",
       "key_state": "正常",
       "health": "正常",
-      "resource": "967MB total, 479MB used, 488MB available / ext4 24G used 3.8G free 17%",
+      "resource": "967MB total, 480MB used, 487MB available / ext4 24G used 3.8G free 17%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 2 days, 19 hours, 47 minutes",
+      "uptime": "up 2 days, 19 hours, 48 minutes",
       "short_error": "无"
     }
   ],
