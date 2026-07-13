@@ -1,7 +1,7 @@
 {
   "date_local": "2026-07-13",
-  "generated_at": "2026-07-13T00:00:42.712684+00:00",
-  "generated_at_local": "2026-07-13T08:00:42.712684+08:00",
+  "generated_at": "2026-07-13T00:02:24.607036+00:00",
+  "generated_at_local": "2026-07-13T08:02:24.607036+08:00",
   "overall_status": "warn",
   "anomalies": [
     "netcup1o[low_memory]",
@@ -21,21 +21,21 @@
       "notes": "可用内存偏低",
       "key_state": "正常",
       "health": "正常",
-      "resource": "960MB total, 869MB used, 90MB available / ext4 29G used 16G free 58%",
+      "resource": "960MB total, 861MB used, 99MB available / ext4 29G used 16G free 58%",
       "kernel": "6.1.0-49-amd64",
-      "uptime": "up 5 days, 5 hours, 28 minutes",
+      "uptime": "up 5 days, 5 hours, 30 minutes",
       "short_error": "Jul 12 23:37:22 1o sshd[357680]: error: send_error: write: Connection reset by peer / Jul 13 02:36:58 1o sshd[366969]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]"
     },
     {
       "name": "netcup-recorder",
       "status": "ok",
       "alerts": [],
-      "notes": "Hermes 落后 240 commit（未自动更新）",
+      "notes": "Hermes 落后 1 commit（未自动更新）",
       "key_state": "正常",
       "health": "正常",
-      "resource": "7940MB total, 3465MB used, 4475MB available / ext4 503G used 149G free 31%",
+      "resource": "7940MB total, 3519MB used, 4421MB available / ext4 503G used 149G free 31%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 1 week, 3 days, 3 hours, 15 minutes",
+      "uptime": "up 1 week, 3 days, 3 hours, 16 minutes",
       "short_error": "Jul 12 23:29:17 rust sshd-session[1777956]: error: send_error: write: Connection reset by peer"
     },
     {
@@ -45,9 +45,9 @@
       "notes": "无",
       "key_state": "正常",
       "health": "正常",
-      "resource": "967MB total, 476MB used, 490MB available / ext4 24G used 3.8G free 17%",
+      "resource": "967MB total, 474MB used, 493MB available / ext4 24G used 3.8G free 17%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 3 days, 19 hours, 47 minutes",
+      "uptime": "up 3 days, 19 hours, 49 minutes",
       "short_error": "Jul 12 05:43:39 racknerd-bfa113c sshd-session[36078]: error: userauth_pubkey: parse key: Invalid key length [preauth] / Jul 12 08:28:40 racknerd-bfa113c sshd-session[38830]: error: send_error: write: Connection reset by peer"
     }
   ],
