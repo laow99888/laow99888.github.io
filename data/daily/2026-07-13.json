@@ -1,0 +1,105 @@
+{
+  "date_local": "2026-07-13",
+  "generated_at": "2026-07-13T00:00:42.712684+00:00",
+  "generated_at_local": "2026-07-13T08:00:42.712684+08:00",
+  "overall_status": "warn",
+  "anomalies": [
+    "netcup1o[low_memory]",
+    "external[入口 B（公开）]",
+    "backup[backup_stale]"
+  ],
+  "flagged_hosts": [
+    "netcup1o"
+  ],
+  "hosts": [
+    {
+      "name": "netcup1o",
+      "status": "warn",
+      "alerts": [
+        "low_memory"
+      ],
+      "notes": "可用内存偏低",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "960MB total, 869MB used, 90MB available / ext4 29G used 16G free 58%",
+      "kernel": "6.1.0-49-amd64",
+      "uptime": "up 5 days, 5 hours, 28 minutes",
+      "short_error": "Jul 12 23:37:22 1o sshd[357680]: error: send_error: write: Connection reset by peer / Jul 13 02:36:58 1o sshd[366969]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]"
+    },
+    {
+      "name": "netcup-recorder",
+      "status": "ok",
+      "alerts": [],
+      "notes": "Hermes 落后 240 commit（未自动更新）",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "7940MB total, 3465MB used, 4475MB available / ext4 503G used 149G free 31%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 1 week, 3 days, 3 hours, 15 minutes",
+      "short_error": "Jul 12 23:29:17 rust sshd-session[1777956]: error: send_error: write: Connection reset by peer"
+    },
+    {
+      "name": "sanjose",
+      "status": "ok",
+      "alerts": [],
+      "notes": "无",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "967MB total, 476MB used, 490MB available / ext4 24G used 3.8G free 17%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 3 days, 19 hours, 47 minutes",
+      "short_error": "Jul 12 05:43:39 racknerd-bfa113c sshd-session[36078]: error: userauth_pubkey: parse key: Invalid key length [preauth] / Jul 12 08:28:40 racknerd-bfa113c sshd-session[38830]: error: send_error: write: Connection reset by peer"
+    }
+  ],
+  "external": [
+    {
+      "label": "入口 A",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 B",
+      "kind": "公开",
+      "code": "404",
+      "expected": "200",
+      "ok": false
+    },
+    {
+      "label": "入口 C",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 D",
+      "kind": "受保护",
+      "code": "401",
+      "expected": "401",
+      "ok": true
+    },
+    {
+      "label": "入口 E",
+      "kind": "受保护",
+      "code": "401",
+      "expected": "401",
+      "ok": true
+    }
+  ],
+  "external_alerts": [
+    "入口 B（公开）"
+  ],
+  "backup": {
+    "status": "ok",
+    "summary": "异常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674；状态过旧",
+    "alert": true
+  },
+  "summary": {
+    "host_count": 3,
+    "anomaly_count": 3,
+    "external_alert_count": 1,
+    "backup_alert": true
+  }
+}
