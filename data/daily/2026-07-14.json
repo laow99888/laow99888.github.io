@@ -1,7 +1,7 @@
 {
   "date_local": "2026-07-14",
-  "generated_at": "2026-07-14T00:01:05.309189+00:00",
-  "generated_at_local": "2026-07-14T08:01:05.309189+08:00",
+  "generated_at": "2026-07-14T00:02:12.654950+00:00",
+  "generated_at_local": "2026-07-14T08:02:12.654950+08:00",
   "overall_status": "warn",
   "anomalies": [
     "netcup1o[low_memory]",
@@ -23,19 +23,19 @@
       "health": "正常",
       "resource": "960MB total, 866MB used, 94MB available / ext4 29G used 16G free 58%",
       "kernel": "6.1.0-49-amd64",
-      "uptime": "up 6 days, 5 hours, 28 minutes",
+      "uptime": "up 6 days, 5 hours, 29 minutes",
       "short_error": "无"
     },
     {
       "name": "netcup-recorder",
       "status": "ok",
       "alerts": [],
-      "notes": "Hermes 落后 162 commit（未自动更新）",
+      "notes": "Hermes 落后 1 commit（未自动更新）",
       "key_state": "正常",
       "health": "正常",
-      "resource": "7940MB total, 3755MB used, 4185MB available / ext4 503G used 154G free 32%",
+      "resource": "7940MB total, 3792MB used, 4148MB available / ext4 503G used 154G free 32%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 1 week, 4 days, 3 hours, 15 minutes",
+      "uptime": "up 1 week, 4 days, 3 hours, 16 minutes",
       "short_error": "Jul 13 20:26:00 rust sshd-session[2325785]: error: send_error: write: Connection reset by peer"
     },
     {
@@ -45,9 +45,9 @@
       "notes": "无",
       "key_state": "正常",
       "health": "正常",
-      "resource": "967MB total, 488MB used, 479MB available / ext4 24G used 3.8G free 17%",
+      "resource": "967MB total, 483MB used, 484MB available / ext4 24G used 3.8G free 17%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 4 days, 19 hours, 47 minutes",
+      "uptime": "up 4 days, 19 hours, 48 minutes",
       "short_error": "Jul 13 02:35:21 racknerd-bfa113c sshd-session[46441]: error: userauth_pubkey: parse key: Invalid key length [preauth] / Jul 13 08:50:52 racknerd-bfa113c sshd-session[49244]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]"
     }
   ],
