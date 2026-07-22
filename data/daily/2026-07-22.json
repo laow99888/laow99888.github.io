@@ -1,7 +1,7 @@
 {
   "date_local": "2026-07-22",
-  "generated_at": "2026-07-22T00:00:56.259558+00:00",
-  "generated_at_local": "2026-07-22T08:00:56.259558+08:00",
+  "generated_at": "2026-07-22T00:03:31.489245+00:00",
+  "generated_at_local": "2026-07-22T08:03:31.489245+08:00",
   "overall_status": "warn",
   "anomalies": [
     "netcup1o[low_memory]",
@@ -21,21 +21,21 @@
       "notes": "可用内存偏低",
       "key_state": "正常",
       "health": "正常",
-      "resource": "960MB total, 859MB used, 100MB available / ext4 29G used 16G free 59%",
+      "resource": "960MB total, 876MB used, 84MB available / ext4 29G used 16G free 59%",
       "kernel": "6.1.0-49-amd64",
-      "uptime": "up 2 weeks, 5 hours, 28 minutes",
+      "uptime": "up 2 weeks, 5 hours, 31 minutes",
       "short_error": "无"
     },
     {
       "name": "netcup-recorder",
       "status": "ok",
       "alerts": [],
-      "notes": "Hermes 落后 456 commit（未自动更新）",
+      "notes": "Hermes 落后 1 commit（未自动更新）",
       "key_state": "正常",
       "health": "正常",
-      "resource": "7940MB total, 3270MB used, 4670MB available / ext4 503G used 98G free 21%",
+      "resource": "7940MB total, 3309MB used, 4631MB available / ext4 503G used 97G free 20%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 2 weeks, 5 days, 3 hours, 15 minutes",
+      "uptime": "up 2 weeks, 5 days, 3 hours, 17 minutes",
       "short_error": "Jul 21 20:38:52 rust (sd-exec-[3416088]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1. / Jul 21 21:23:01 rust systemd-ssh-generator[3436334]: Failed to query local AF_VSOCK CID: Cannot assign requested address"
     },
     {
@@ -45,9 +45,9 @@
       "notes": "无",
       "key_state": "正常",
       "health": "正常",
-      "resource": "967MB total, 448MB used, 518MB available / ext4 24G used 4.8G free 21%",
+      "resource": "967MB total, 446MB used, 521MB available / ext4 24G used 4.8G free 21%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 1 week, 5 days, 19 hours, 47 minutes",
+      "uptime": "up 1 week, 5 days, 19 hours, 50 minutes",
       "short_error": "Jul 20 20:57:15 racknerd-bfa113c sshd-session[140395]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth]"
     }
   ],

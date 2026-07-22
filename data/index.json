@@ -1,7 +1,7 @@
 [
   {
     "date_local": "2026-07-22",
-    "generated_at_local": "2026-07-22T08:00:56.259558+08:00",
+    "generated_at_local": "2026-07-22T08:03:31.489245+08:00",
     "overall_status": "warn",
     "anomaly_count": 3,
     "flagged_hosts": [
