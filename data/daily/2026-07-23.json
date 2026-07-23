@@ -1,0 +1,105 @@
+{
+  "date_local": "2026-07-23",
+  "generated_at": "2026-07-23T00:01:23.564851+00:00",
+  "generated_at_local": "2026-07-23T08:01:23.564851+08:00",
+  "overall_status": "warn",
+  "anomalies": [
+    "netcup1o[low_memory]",
+    "external[入口 E（受保护）]",
+    "backup[backup_stale]"
+  ],
+  "flagged_hosts": [
+    "netcup1o"
+  ],
+  "hosts": [
+    {
+      "name": "netcup1o",
+      "status": "warn",
+      "alerts": [
+        "low_memory"
+      ],
+      "notes": "可用内存偏低",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "960MB total, 884MB used, 75MB available / ext4 29G used 17G free 60%",
+      "kernel": "6.1.0-49-amd64",
+      "uptime": "up 2 weeks, 1 day, 5 hours, 29 minutes",
+      "short_error": "无"
+    },
+    {
+      "name": "netcup-recorder",
+      "status": "ok",
+      "alerts": [],
+      "notes": "Hermes 落后 527 commit（未自动更新）",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "7940MB total, 3062MB used, 4877MB available / ext4 503G used 105G free 22%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 2 weeks, 6 days, 3 hours, 15 minutes",
+      "short_error": "Jul 22 17:29:57 rust sudo[3956638]:     root : unknown user postgres ; PWD=/root ; USER=postgres ; / Jul 22 17:29:57 rust sudo[3956639]:     root : unknown user postgres ; PWD=/root ; USER=postgres ;"
+    },
+    {
+      "name": "sanjose",
+      "status": "ok",
+      "alerts": [],
+      "notes": "无",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "967MB total, 444MB used, 522MB available / ext4 24G used 4.8G free 21%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 1 week, 6 days, 19 hours, 48 minutes",
+      "short_error": "无"
+    }
+  ],
+  "external": [
+    {
+      "label": "入口 A",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 B",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 C",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 D",
+      "kind": "受保护",
+      "code": "401",
+      "expected": "401",
+      "ok": true
+    },
+    {
+      "label": "入口 E",
+      "kind": "受保护",
+      "code": "200",
+      "expected": "401",
+      "ok": false
+    }
+  ],
+  "external_alerts": [
+    "入口 E（受保护）"
+  ],
+  "backup": {
+    "status": "ok",
+    "summary": "异常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674；状态过旧",
+    "alert": true
+  },
+  "summary": {
+    "host_count": 3,
+    "anomaly_count": 3,
+    "external_alert_count": 1,
+    "backup_alert": true
+  }
+}
