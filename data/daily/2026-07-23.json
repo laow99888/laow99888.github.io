@@ -1,7 +1,7 @@
 {
   "date_local": "2026-07-23",
-  "generated_at": "2026-07-23T00:01:23.564851+00:00",
-  "generated_at_local": "2026-07-23T08:01:23.564851+08:00",
+  "generated_at": "2026-07-23T00:02:19.061370+00:00",
+  "generated_at_local": "2026-07-23T08:02:19.061370+08:00",
   "overall_status": "warn",
   "anomalies": [
     "netcup1o[low_memory]",
@@ -21,21 +21,21 @@
       "notes": "可用内存偏低",
       "key_state": "正常",
       "health": "正常",
-      "resource": "960MB total, 884MB used, 75MB available / ext4 29G used 17G free 60%",
+      "resource": "960MB total, 890MB used, 70MB available / ext4 29G used 17G free 60%",
       "kernel": "6.1.0-49-amd64",
-      "uptime": "up 2 weeks, 1 day, 5 hours, 29 minutes",
+      "uptime": "up 2 weeks, 1 day, 5 hours, 30 minutes",
       "short_error": "无"
     },
     {
       "name": "netcup-recorder",
       "status": "ok",
       "alerts": [],
-      "notes": "Hermes 落后 527 commit（未自动更新）",
+      "notes": "Hermes 落后 1 commit（未自动更新）",
       "key_state": "正常",
       "health": "正常",
-      "resource": "7940MB total, 3062MB used, 4877MB available / ext4 503G used 105G free 22%",
+      "resource": "7940MB total, 3171MB used, 4768MB available / ext4 503G used 105G free 22%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 2 weeks, 6 days, 3 hours, 15 minutes",
+      "uptime": "up 2 weeks, 6 days, 3 hours, 16 minutes",
       "short_error": "Jul 22 17:29:57 rust sudo[3956638]:     root : unknown user postgres ; PWD=/root ; USER=postgres ; / Jul 22 17:29:57 rust sudo[3956639]:     root : unknown user postgres ; PWD=/root ; USER=postgres ;"
     },
     {
@@ -45,9 +45,9 @@
       "notes": "无",
       "key_state": "正常",
       "health": "正常",
-      "resource": "967MB total, 444MB used, 522MB available / ext4 24G used 4.8G free 21%",
+      "resource": "967MB total, 448MB used, 519MB available / ext4 24G used 4.8G free 21%",
       "kernel": "6.12.94+deb13-amd64",
-      "uptime": "up 1 week, 6 days, 19 hours, 48 minutes",
+      "uptime": "up 1 week, 6 days, 19 hours, 49 minutes",
       "short_error": "无"
     }
   ],
