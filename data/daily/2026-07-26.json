@@ -1,0 +1,108 @@
+{
+  "date_local": "2026-07-26",
+  "generated_at": "2026-07-26T00:00:47.942931+00:00",
+  "generated_at_local": "2026-07-26T08:00:47.942931+08:00",
+  "overall_status": "warn",
+  "anomalies": [
+    "netcup1o[service_issue,health_issue,low_memory]",
+    "external[入口 D（受保护）,入口 E（受保护）]",
+    "backup[backup_stale]"
+  ],
+  "flagged_hosts": [
+    "netcup1o"
+  ],
+  "hosts": [
+    {
+      "name": "netcup1o",
+      "status": "warn",
+      "alerts": [
+        "service_issue",
+        "health_issue",
+        "low_memory"
+      ],
+      "notes": "可用内存偏低",
+      "key_state": "x-ui:inactive",
+      "health": "tgapi:000000(no)",
+      "resource": "960MB total, 916MB used, 44MB available / ext4 29G used 16G free 57%",
+      "kernel": "6.1.0-49-amd64",
+      "uptime": "up 2 weeks, 4 days, 5 hours, 28 minutes",
+      "short_error": "Jul 26 03:07:12 1o sshd[1328053]: fatal: userauth_pubkey: parse publickey packet: incomplete message [preauth] / Jul 26 06:56:36 1o sshd[658]: error: beginning MaxStartups throttling"
+    },
+    {
+      "name": "netcup-recorder",
+      "status": "ok",
+      "alerts": [],
+      "notes": "Hermes 落后 138 commit（未自动更新）",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "7940MB total, 4373MB used, 3567MB available / ext4 503G used 108G free 23%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 3 weeks, 2 days, 3 hours, 15 minutes",
+      "short_error": "Jul 25 23:36:16 rust systemd-ssh-generator[1810539]: Failed to query local AF_VSOCK CID: Cannot assign requested address / Jul 25 23:36:16 rust (sd-exec-[1810530]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1."
+    },
+    {
+      "name": "sanjose",
+      "status": "ok",
+      "alerts": [],
+      "notes": "无",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "967MB total, 481MB used, 486MB available / ext4 24G used 4.8G free 21%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 2 weeks, 2 days, 19 hours, 47 minutes",
+      "short_error": "无"
+    }
+  ],
+  "external": [
+    {
+      "label": "入口 A",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 B",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 C",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 D",
+      "kind": "受保护",
+      "code": "410",
+      "expected": "401",
+      "ok": false
+    },
+    {
+      "label": "入口 E",
+      "kind": "受保护",
+      "code": "200",
+      "expected": "401",
+      "ok": false
+    }
+  ],
+  "external_alerts": [
+    "入口 D（受保护）",
+    "入口 E（受保护）"
+  ],
+  "backup": {
+    "status": "ok",
+    "summary": "异常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674；状态过旧",
+    "alert": true
+  },
+  "summary": {
+    "host_count": 3,
+    "anomaly_count": 3,
+    "external_alert_count": 2,
+    "backup_alert": true
+  }
+}
