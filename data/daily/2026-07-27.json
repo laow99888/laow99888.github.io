@@ -1,0 +1,106 @@
+{
+  "date_local": "2026-07-27",
+  "generated_at": "2026-07-27T00:00:43.324478+00:00",
+  "generated_at_local": "2026-07-27T08:00:43.324478+08:00",
+  "overall_status": "warn",
+  "anomalies": [
+    "netcup1o[ssh_error]",
+    "external[入口 D（受保护）,入口 E（受保护）]",
+    "backup[backup_stale]"
+  ],
+  "flagged_hosts": [
+    "netcup1o"
+  ],
+  "hosts": [
+    {
+      "name": "netcup1o",
+      "status": "error",
+      "alerts": [
+        "ssh_error"
+      ],
+      "notes": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\nIt is also possible that a host key has just been changed.\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:IyZcfgyDQSSrTW5WYJx5Z4ZwxdknAaC4tqm5XcGGzGs.\nPlease contact your system administrator.\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\nOffending ECDSA key in /root/.ssh/known_hosts:7\n  remove with:\n  ssh-keygen -f '/root/.ssh/known_hosts' -R '185.244.195.10'\nHost key for 185.244.195.10 has changed and you have requested strict checking.\nHost key verification failed.",
+      "key_state": "连接失败",
+      "health": "未知",
+      "resource": "-",
+      "kernel": "-",
+      "uptime": "-",
+      "short_error": "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\nIt is also possible that a host key has just been changed.\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:IyZcfgyDQSSrTW5WYJx5Z4ZwxdknAaC4tqm5XcGGzGs.\nPlease contact your system administrator.\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\nOffending ECDSA key in /root/.ssh/known_hosts:7\n  remove with:\n  ssh-keygen -f '/root/.ssh/known_hosts' -R '185.244.195.10'\nHost key for 185.244.195.10 has changed and you have requested strict checking.\nHost key verification failed."
+    },
+    {
+      "name": "netcup-recorder",
+      "status": "ok",
+      "alerts": [],
+      "notes": "Hermes 落后 380 commit（未自动更新）",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "7940MB total, 3330MB used, 4610MB available / ext4 503G used 122G free 26%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 3 weeks, 3 days, 3 hours, 15 minutes",
+      "short_error": "Jul 26 09:04:55 rust systemd-ssh-generator[2148272]: Failed to query local AF_VSOCK CID: Cannot assign requested address / Jul 26 09:04:55 rust (sd-exec-[2148262]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1."
+    },
+    {
+      "name": "sanjose",
+      "status": "ok",
+      "alerts": [],
+      "notes": "无",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "967MB total, 469MB used, 497MB available / ext4 24G used 4.8G free 21%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 2 weeks, 3 days, 19 hours, 47 minutes",
+      "short_error": "Jul 25 17:09:20 racknerd-bfa113c systemd-ssh-generator[197630]: Failed to query local AF_VSOCK CID: Cannot assign requested address / Jul 25 17:09:20 racknerd-bfa113c (sd-exec-[197622]: /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1."
+    }
+  ],
+  "external": [
+    {
+      "label": "入口 A",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 B",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 C",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 D",
+      "kind": "受保护",
+      "code": "unknown",
+      "expected": "401",
+      "ok": false
+    },
+    {
+      "label": "入口 E",
+      "kind": "受保护",
+      "code": "200",
+      "expected": "401",
+      "ok": false
+    }
+  ],
+  "external_alerts": [
+    "入口 D（受保护）",
+    "入口 E（受保护）"
+  ],
+  "backup": {
+    "status": "ok",
+    "summary": "异常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674；状态过旧",
+    "alert": true
+  },
+  "summary": {
+    "host_count": 3,
+    "anomaly_count": 3,
+    "external_alert_count": 2,
+    "backup_alert": true
+  }
+}
