@@ -34,14 +34,14 @@
         <div class='focus-card'>
           <div class='tiny-label'>今天状态</div>
           <div class='big-status'>需关注</div>
-          <div class='tiny-label' style='margin-top:8px'>生成于 2026-07-27T08:00:43.324478+08:00</div>
+          <div class='tiny-label' style='margin-top:8px'>生成于 2026-07-28T08:00:54.507083+08:00</div>
         </div>
       </div>
       <div class='stats'>
-        <div class='stat'><div class='label'>归档天数</div><div class='value'>22</div></div>
-        <div class='stat'><div class='label'>异常天数</div><div class='value'>22</div></div>
+        <div class='stat'><div class='label'>归档天数</div><div class='value'>23</div></div>
+        <div class='stat'><div class='label'>异常天数</div><div class='value'>23</div></div>
         <div class='stat'><div class='label'>入口通过</div><div class='value'>3/5</div></div>
-        <div class='stat'><div class='label'>最近主机数</div><div class='value'>3</div></div>
+        <div class='stat'><div class='label'>最近主机数</div><div class='value'>2</div></div>
       </div>
     </section>
 
@@ -56,9 +56,9 @@
 
       <div class='latest-grid'>
         <div class='feature'>
-          <div class='feature-date'>2026-07-27</div>
-          <div class='summary-row'><div class='key'>异常</div><div>netcup1o[ssh_error]；external[入口 D（受保护）,入口 E（受保护）]；backup[backup_stale]</div></div>
-          <div class='summary-row'><div class='key'>关注</div><div>netcup1o</div></div>
+          <div class='feature-date'>2026-07-28</div>
+          <div class='summary-row'><div class='key'>异常</div><div>external[入口 E（受保护）]；backup[backup_stale]</div></div>
+          <div class='summary-row'><div class='key'>关注</div><div>无</div></div>
           <div class='summary-row'><div class='key'>备份</div><div>异常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674；状态过旧</div></div>
         </div>
 
@@ -69,21 +69,7 @@
         </div>
       </div>
 
-      <div class='hosts'><article class='host-card'><div class='host-top'><h3>netcup1o</h3><span class="badge err">异常</span></div><p class='host-meta'>-</p><p class='host-note'>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
-Someone could be eavesdropping on you right now (man-in-the-middle attack)!
-It is also possible that a host key has just been changed.
-The fingerprint for the ED25519 key sent by the remote host is
-SHA256:IyZcfgyDQSSrTW5WYJx5Z4ZwxdknAaC4tqm5XcGGzGs.
-Please contact your system administrator.
-Add correct host key in /root/.ssh/known_hosts to get rid of this message.
-Offending ECDSA key in /root/.ssh/known_hosts:7
-  remove with:
-  ssh-keygen -f &#x27;/root/.ssh/known_hosts&#x27; -R &#x27;185.244.195.10&#x27;
-Host key for 185.244.195.10 has changed and you have requested strict checking.
-Host key verification failed.</p><div class='host-support'><div>关键状态：连接失败</div><div>健康检查：未知</div></div></article><article class='host-card'><div class='host-top'><h3>netcup-recorder</h3><span class="badge ok">正常</span></div><p class='host-meta'>7940MB total, 3330MB used, 4610MB available / ext4 503G used 122G free 26%</p><p class='host-note'>Hermes 落后 380 commit（未自动更新）</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div></div></article><article class='host-card'><div class='host-top'><h3>sanjose</h3><span class="badge ok">正常</span></div><p class='host-meta'>967MB total, 469MB used, 497MB available / ext4 24G used 4.8G free 21%</p><p class='host-note'>无</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div></div></article></div>
+      <div class='hosts'><article class='host-card'><div class='host-top'><h3>netcup-recorder</h3><span class="badge ok">正常</span></div><p class='host-meta'>7940MB total, 3694MB used, 4245MB available / ext4 503G used 124G free 26%</p><p class='host-note'>Hermes 落后 99 commit（未自动更新）</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div></div></article><article class='host-card'><div class='host-top'><h3>sanjose</h3><span class="badge ok">正常</span></div><p class='host-meta'>967MB total, 479MB used, 487MB available / ext4 24G used 4.8G free 21%</p><p class='host-note'>无</p><div class='host-support'><div>关键状态：正常</div><div>健康检查：正常</div></div></article></div>
 
       <div class='table-shell'>
         <div class='table-wrap'>
@@ -91,7 +77,7 @@ Host key verification failed.</p><div class='host-support'><div>关键状态：�
             <thead>
               <tr><th>日期</th><th>状态</th><th>关注主机</th><th>异常数</th><th>备份</th></tr>
             </thead>
-            <tbody><tr><td><a href='daily/2026-07-27.html'>2026-07-27</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-26.html'>2026-07-26</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-25.html'>2026-07-25</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-24.html'>2026-07-24</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-23.html'>2026-07-23</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-22.html'>2026-07-22</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-20.html'>2026-07-20</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-19.html'>2026-07-19</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-17.html'>2026-07-17</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-16.html'>2026-07-16</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-15.html'>2026-07-15</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-14.html'>2026-07-14</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-13.html'>2026-07-13</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-12.html'>2026-07-12</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-11.html'>2026-07-11</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-10.html'>2026-07-10</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-09.html'>2026-07-09</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-08.html'>2026-07-08</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>2</td><td>ok</td></tr><tr><td><a href='daily/2026-07-07.html'>2026-07-07</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>2</td><td>ok</td></tr><tr><td><a href='daily/2026-07-06.html'>2026-07-06</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr><tr><td><a href='daily/2026-07-05.html'>2026-07-05</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr><tr><td><a href='daily/2026-07-04.html'>2026-07-04</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr></tbody>
+            <tbody><tr><td><a href='daily/2026-07-28.html'>2026-07-28</a></td><td><span class="badge warn">需关注</span></td><td>无</td><td>2</td><td>ok</td></tr><tr><td><a href='daily/2026-07-27.html'>2026-07-27</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-26.html'>2026-07-26</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-25.html'>2026-07-25</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-24.html'>2026-07-24</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-23.html'>2026-07-23</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-22.html'>2026-07-22</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-20.html'>2026-07-20</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-19.html'>2026-07-19</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-17.html'>2026-07-17</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-16.html'>2026-07-16</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-15.html'>2026-07-15</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-14.html'>2026-07-14</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-13.html'>2026-07-13</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-12.html'>2026-07-12</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-11.html'>2026-07-11</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-10.html'>2026-07-10</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-09.html'>2026-07-09</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>3</td><td>ok</td></tr><tr><td><a href='daily/2026-07-08.html'>2026-07-08</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>2</td><td>ok</td></tr><tr><td><a href='daily/2026-07-07.html'>2026-07-07</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>2</td><td>ok</td></tr><tr><td><a href='daily/2026-07-06.html'>2026-07-06</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr><tr><td><a href='daily/2026-07-05.html'>2026-07-05</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr><tr><td><a href='daily/2026-07-04.html'>2026-07-04</a></td><td><span class="badge warn">需关注</span></td><td>netcup1o</td><td>1</td><td>ok</td></tr></tbody>
           </table>
         </div>
       </div>

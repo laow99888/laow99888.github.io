@@ -1,0 +1,81 @@
+{
+  "date_local": "2026-07-28",
+  "generated_at": "2026-07-28T00:00:54.507083+00:00",
+  "generated_at_local": "2026-07-28T08:00:54.507083+08:00",
+  "overall_status": "warn",
+  "anomalies": [
+    "external[入口 E（受保护）]",
+    "backup[backup_stale]"
+  ],
+  "flagged_hosts": [],
+  "hosts": [
+    {
+      "name": "netcup-recorder",
+      "status": "ok",
+      "alerts": [],
+      "notes": "Hermes 落后 99 commit（未自动更新）",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "7940MB total, 3694MB used, 4245MB available / ext4 503G used 124G free 26%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 3 weeks, 4 days, 3 hours, 15 minutes",
+      "short_error": "无"
+    },
+    {
+      "name": "sanjose",
+      "status": "ok",
+      "alerts": [],
+      "notes": "无",
+      "key_state": "正常",
+      "health": "正常",
+      "resource": "967MB total, 479MB used, 487MB available / ext4 24G used 4.8G free 21%",
+      "kernel": "6.12.94+deb13-amd64",
+      "uptime": "up 2 weeks, 4 days, 19 hours, 47 minutes",
+      "short_error": "无"
+    }
+  ],
+  "external": [
+    {
+      "label": "入口 A",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 B",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 C",
+      "kind": "公开",
+      "code": "200",
+      "expected": "200",
+      "ok": true
+    },
+    {
+      "label": "入口 E",
+      "kind": "受保护",
+      "code": "200",
+      "expected": "401",
+      "ok": false
+    }
+  ],
+  "external_alerts": [
+    "入口 E（受保护）"
+  ],
+  "backup": {
+    "status": "ok",
+    "summary": "异常；最近运行：2026-07-04T13:15:34Z；日志：hermes-backup-2026-07-04-131534.log；备份仓库 HEAD：3a9e674；状态过旧",
+    "alert": true
+  },
+  "summary": {
+    "host_count": 2,
+    "anomaly_count": 2,
+    "external_alert_count": 1,
+    "backup_alert": true
+  }
+}
